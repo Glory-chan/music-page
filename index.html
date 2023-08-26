@@ -1,0 +1,511 @@
+<!-- Kondo Godglory 
+kgodglory@gmail.com -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+  <title>Gospel</title>
+</head>
+
+<header class="header">
+   <img class="header-image" src="images/tc.jpeg" alt="Cover 1">
+   <h1>Gospel</h1>
+   <div class="search-container">
+     <input type="text" id="searchInput" placeholder="Rechercher une chanson...">
+     <button id="searchButton">Rechercher</button>
+   </div>
+ </header>
+
+<body>
+   <div class="loading-overlay">
+      <h1>Gospel</h1>
+      <div class="loading-spinner"></div>
+   </div>
+    
+  <div class="music-library">
+    <ul id="playlist">
+      <li class="song" data-src="music/Krista Marguerite - Jehovah.mp3">
+        <img src="images/music.jpg" alt="Cover 1">
+        <span>Krista Marguerite - Jehovah</span>
+     </li>
+     <li class="song" data-src="music/Consécration (Axe21 musique) - la Chapelle Musique & Sébastien Corn.mp3">
+        <img src="images/music.jpg" alt="Cover 1">
+        <span>Consécration - la Chapelle Musique & Sébastien Corn</span>
+     </li>
+     <li class="song" data-src="music/Alléluia (Videoclip Officiel) - la Chapelle Musique ft. Étienne Charles.mp3">
+        <img src="images/music.jpg" alt="Cover 1">
+        <span>Alléluia- la Chapelle Musique ft. Étienne Charles</span>
+     </li>
+     <li class="song" data-src="music/ANNA TEKO Ta douce voix shilo.mp3">
+        <img src="images/music.jpg" alt="Cover 1">
+        <span>ANNA TEKO Ta douce voix shilo</span>
+     </li>
+     <li class="song" data-src="music/BAGAY BONDIE _ Anna Teko.mp3">
+        <img src="images/music.jpg" alt="Cover 1">
+        <span>BAGAY BONDIE _ Anna Teko</span>
+     </li>
+     <li class="song" data-src="music/Deborah Lukalu - Je sais (Clip Officiel).mp3">
+        <img src="images/music.jpg" alt="Cover 1">
+        <span>Deborah Lukalu - Je sais</span>
+     </li>
+     <li class="song" data-src="music/DEBORAH LUKALU EL SHADDAI PRAISE & WORSHIP LIVE SESSION.mp3">
+        <img src="images/music.jpg" alt="Cover 1">
+        <span>DEBORAH LUKALU EL SHADDAI</span>
+     </li>
+     <li class="song" data-src="music/DEBORAH LUKALU JE DIS NON PRAISE & WORSHIP LIVE SESSION.mp3">
+        <img src="images/music.jpg" alt="Cover 1">
+        <span>DEBORAH LUKALU JE DIS NON</span>
+     </li>
+     <li class="song" data-src="music/Dena Mwana - Souffle (Official video).mp3">
+        <img src="images/music.jpg" alt="Cover 1">
+        <span>Dena Mwana - Souffle</span>
+     </li>
+     <li class="song" data-src="music/Eden - Ayo (Clip officiel)~1.mp3">
+      <img src="images/music.jpg" alt="Cover 1">
+      <span>Eden - Ayo</span>
+   </li>
+   <li class="song" data-src="music/Eden - Jésus a gagné (Clip officiel).mp3">
+      <img src="images/music.jpg" alt="Cover 1">
+      <span>Eden - Jésus a gagné</span>
+   </li>
+   <li class="song" data-src="music/EDEN - JESUS EST MON PAPA (avec paroles).mp3">
+      <img src="images/music.jpg" alt="Cover 1">
+      <span>EDEN - JESUS EST MON PAPA</span>
+   </li>
+   <li class="song" data-src="music/Chapitre 2 (sessions acoustique) - louanges acoustiques avec la Chapelle Musique.mp3">
+      <img src="images/music.jpg" alt="Cover 1">
+      <span>Louanges acoustiques avec la Chapelle Musique</span>
+   </li>
+   <li class="song" data-src="music/EDEN -TU as les paroles de la vie (LIVE PARIS).mp3">
+      <img src="images/music.jpg" alt="Cover 1">
+      <span>EDEN -Tu as les paroles de la vie</span>
+   </li>
+   <li class="song" data-src="music/EDEN MERCI SEIGNEUR .mp3">
+      <img src="images/music.jpg" alt="Cover 1">
+      <span>EDEN MERCI SEIGNEUR</span>
+   </li>
+   <li class="song" data-src="music/Ewe worship songs - Mieda aah kpe nawo, ooo mia aah Mawu - gospel music medley - Paul Dodji Noumonvi~1.mp3">
+      <img src="images/music.jpg" alt="Cover 1">
+      <span>Ewe worship songs - Mieda aah kpe nawo</span>
+   </li>
+   <li class="song" data-src="music/Fast Food Music Christ - Demain, quand il est venu.mp3">
+      <img src="images/music.jpg" alt="Cover 1">
+      <span>Fast Food Music Christ - Demain, quand il est venu</span>
+   </li>
+   <li class="song" data-src="music/Fast Food Music Christ - Eux et Nous.mp3">
+      <img src="images/music.jpg" alt="Cover 1">
+      <span>Fast Food Music Christ - Eux et Nous</span>
+   </li>
+   <li class="song" data-src="music/Je t’appartiens A_C ANNA TEKO.mp3">
+      <img src="images/music.jpg" alt="Cover 1">
+      <span>Je t’appartiens A_C ANNA TEKO</span>
+   </li>
+   <li class="song" data-src="music/Fast Food Music Christ - Lonely.mp3">
+      <img src="images/music.jpg" alt="Cover 1">
+      <span>Fast Food Music Christ - Lonely</span>
+   </li>
+   <li class="song" data-src="music/Fast Food Music Christ - Tout le monde reste fort.mp3">
+      <img src="images/music.jpg" alt="Cover 1">
+      <span>Fast Food Music Christ - Tout le monde reste fort</span>
+   </li>
+   <li class="song" data-src="music/Fidèle _ Loyal - Version Gospel [Clip officiel] YouthFR (feat. Mirella).mp3">
+      <img src="images/music.jpg" alt="Cover 1">
+      <span>Fidèle _ Loyal - Version Gospel (feat. Mirella)</span>
+   </li>
+   <li class="song" data-src="music/Je m'attendrai à toi (Lyrics vidéo) - la Chapelle Musique ft. Sébastien Corn et Marielly Juarez.mp3">
+      <img src="images/music.jpg" alt="Cover 1">
+      <span>Je m'attendrai à toi - la Chapelle Musique ft. Sébastien Corn et Marielly Juarez</span>
+   </li>
+   <li class="song" data-src="music/JEHOVAH OVERDO COVER EN FRANÇAIS - IN FRENCH - JEHOVAH SURPASSE TOUT.mp3">
+      <img src="images/music.jpg" alt="Cover 1">
+      <span>JEHOVAH OVERDO - JEHOVAH SURPASSE TOUT</span>
+   </li>
+   <li class="song" data-src="music/JESUS JE VEUX TE VOIR - EDEN (HD).mp3">
+      <img src="images/music.jpg" alt="Cover 1">
+      <span>JESUS JE VEUX TE VOIR - EDEN</span>
+   </li>
+   <li class="song" data-src="music/Jireh (Version Française) - Psaume 151 (Maverick City & Elevation Worship).mp3">
+      <img src="images/music.jpg" alt="Cover 1">
+      <span>Jireh (Version Française) - Psaume 151</span>
+   </li>
+   <li class="song" data-src="music/Jireh Elevation Worship & Maverick City.mp3">
+      <img src="images/music.jpg" alt="Cover 1">
+      <span>Jireh Elevation Worship & Maverick City</span>
+   </li>
+   <li class="song" data-src="music/Chapitre 1 (session acoustique) — Louange et adoration avec la Chapelle Musique.mp3">
+      <img src="images/music.jpg" alt="Cover 1">
+      <span>Chapitre 2 — Louange et adoration avec la Chapelle Musique</span>
+   </li>
+   <li class="song" data-src="music/Jonathan C. Gambela - Choix de Dieu (Official video).mp3">
+      <img src="images/music.jpg" alt="Cover 1">
+      <span>Jonathan C. Gambela - Choix de Dieu</span>
+   </li>
+   <li class="song" data-src="music/Judikay OMEMMA - Covered by Esther do (remake by Edmoz-beatz) zouk kompa version.mp3">
+      <img src="images/music.jpg" alt="Cover 1">
+      <span>Judikay OMEMMA - zouk kompa version</span>
+   </li>
+   <li class="song" data-src="music/Krista Marguerite - Bétom.mp3">
+      <img src="images/music.jpg" alt="Cover 1">
+      <span>Krista Marguerite - Bétom</span>
+   </li>
+   <li class="song" data-src="music/Ks Bloom - C'est dieu.mp3">
+      <img src="images/music.jpg" alt="Cover 1">
+      <span>Ks Bloom - C'est dieu</span>
+   </li>
+   <li class="song" data-src="music/Ks Bloom - C'est Jesus.mp3">
+      <img src="images/music.jpg" alt="Cover 1">
+      <span>Ks Bloom - C'est Jesus</span>
+   </li>
+   <li class="song" data-src="music/Ks Bloom - Commando.mp3">
+      <img src="images/music.jpg" alt="Cover 1">
+      <span>Ks Bloom - Commando</span>
+   </li>
+   <li class="song" data-src="music/Ks Bloom - Dieu pile pas foutou.mp3">
+      <img src="images/music.jpg" alt="Cover 1">
+      <span>Ks Bloom - Dieu pile pas foutou</span>
+   </li>
+   <li class="song" data-src="music/Ks Bloom - Disciple dans la ville.mp3">
+      <img src="images/music.jpg" alt="Cover 1">
+      <span>Ks Bloom - Disciple dans la ville</span>
+   </li>
+   <li class="song" data-src="music/Ks Bloom - Enfant de Dieu.mp3">
+      <img src="images/music.jpg" alt="Cover 1">
+      <span>Ks Bloom - Enfant de Dieu</span>
+   </li>
+   <li class="song" data-src="music/Ks Bloom - Misericorde.mp3">
+      <img src="images/music.jpg" alt="Cover 1">
+      <span>Ks Bloom - Misericorde</span>
+   </li>
+   <li class="song" data-src="music/L'amour ne meurt jamais (Vidéoclip officiel) - la Chapelle Musique ft. Marielly Juarez.mp3">
+      <img src="images/music.jpg" alt="Cover 1">
+      <span>L'amour ne meurt jamais - la Chapelle Musique ft. Marielly Juarez</span>
+   </li>
+   <li class="song" data-src="music/Le plus grand - Mirella (Lyrics Video).mp3">
+      <img src="images/music.jpg" alt="Cover 1">
+      <span>Le plus grand - Mirella</span>
+   </li>
+   <li class="song" data-src="music/Libre (Aucune condamnation) [Vidéo paroles] YouthFR.mp3">
+      <img src="images/music.jpg" alt="Cover 1">
+      <span>Libre</span>
+   </li>
+   <li class="song" data-src="music/Mon âme est tranquille (Lyrics vidéo) - la Chapelle Musique ft. Sébastien Corn et Emma.mp3">
+      <img src="images/music.jpg" alt="Cover 1">
+      <span>Mon âme est tranquille - la Chapelle Musique ft. Sébastien Corn et Emma</span>
+   </li>
+   <li class="song" data-src="music/MON SEUL ABRI chanté par ANNA TEKO.mp3">
+      <img src="images/music.jpg" alt="Cover 1">
+      <span>MON SEUL ABRI chanté par ANNA TEKO</span>
+   </li>
+   <li class="song" data-src="music/Morijah - Abonde en moi.mp3">
+      <img src="images/music.jpg" alt="Cover 1">
+      <span>Morijah - Abonde en moi</span>
+   </li>
+   <li class="song" data-src="music/Morijah - Alpha   Omega.mp3">
+      <img src="images/music.jpg" alt="Cover 1">
+      <span>Morijah - Alpha Omega</span>
+   </li>
+   <li class="song" data-src="music/Morijah - C est ton onction.mp3">
+      <img src="images/music.jpg" alt="Cover 1">
+      <span>Morijah - C est ton onction</span>
+   </li>
+   <li class="song" data-src="music/Morijah - Cadeau.mp3">
+      <img src="images/music.jpg" alt="Cover 1">
+      <span>Morijah - Cadeau</span>
+   </li>
+   <li class="song" data-src="music/Morijah - Je suis couvert.mp3">
+      <img src="images/music.jpg" alt="Cover 1">
+      <span>Morijah - Je suis couvert</span>
+   </li>
+   <li class="song" data-src="music/Morijah - La couronne.mp3">
+      <img src="images/music.jpg" alt="Cover 1">
+      <span>Morijah - La couronne</span>
+   </li>
+   <li class="song" data-src="music/Morijah - Le nom de Jésus.mp3">
+      <img src="images/music.jpg" alt="Cover 1">
+      <span>Morijah - Le nom de Jésus</span>
+   </li>
+   <li class="song" data-src="music/Morijah - Mon ami.mp3">
+      <img src="images/music.jpg" alt="Cover 1">
+      <span>Morijah - Mon ami</span>
+   </li>
+   <li class="song" data-src="music/Morijah - Mon coeur s incline.mp3">
+      <img src="images/music.jpg" alt="Cover 1">
+      <span>Morijah - Mon coeur s incline</span>
+   </li>
+   <li class="song" data-src="music/Morijah - Papa je t aime.mp3">
+      <img src="images/music.jpg" alt="Cover 1">
+      <span>Morijah - Papa je t aime</span>
+   </li>
+   <li class="song" data-src="music/Morijah - Parcours.mp3">
+      <img src="images/music.jpg" alt="Cover 1">
+      <span>Morijah - Parcours</span>
+   </li>
+   <li class="song" data-src="music/Morijah - Premier amour.mp3">
+      <img src="images/music.jpg" alt="Cover 1">
+      <span>Morijah - Premier amour</span>
+   </li>
+   <li class="song" data-src="music/Morijah - Quelle joie.mp3">
+      <img src="images/music.jpg" alt="Cover 1">
+      <span>Morijah - Quelle joie</span>
+   </li>
+   <li class="song" data-src="music/Morijah - Si je savais.mp3">
+      <img src="images/music.jpg" alt="Cover 1">
+      <span>Morijah - Si je savais</span>
+   </li>
+   <li class="song" data-src="music/Morijah - Témoigner.mp3">
+      <img src="images/music.jpg" alt="Cover 1">
+      <span>Morijah - Témoigner</span>
+   </li>
+   <li class="song" data-src="music/Morijah - Tout dépend de toi.mp3">
+      <img src="images/music.jpg" alt="Cover 1">
+      <span>Morijah - Tout dépend de toi</span>
+   </li>
+   <li class="song" data-src="music/PARDONNE MOI A_C ANNA TEKO.mp3">
+      <img src="images/music.jpg" alt="Cover 1">
+      <span>PARDONNE MOI A_C ANNA TEKO</span>
+   </li>
+   <li class="song" data-src="music/RIEN N'EST PLUS HAUT - la Chapelle Musique ft. Philippe Joseph Bédard et Étienne Charles.mp3">
+      <img src="images/music.jpg" alt="Cover 1">
+      <span>RIEN N'EST PLUS HAUT - la Chapelle Musique </span>
+   </li>
+   <li class="song" data-src="music/roi mysterieux extrait du DVD d'ANNA TEKO.mp3">
+      <img src="images/music.jpg" alt="Cover 1">
+      <span>roi mysterieux - ANNA TEKO</span>
+   </li>
+   <li class="song" data-src="music/Rosny Kayiba - Mon meilleur ami ( Clip officiel).mp3">
+      <img src="images/music.jpg" alt="Cover 1">
+      <span>Rosny Kayiba - Mon meilleur ami</span>
+   </li>
+   <li class="song" data-src="music/Santrinos Raphael - L eminence.mp3">
+      <img src="images/music.jpg" alt="Cover 1">
+      <span>Santrinos Raphael - L eminence</span>
+   </li>
+   <li class="song" data-src="music/SAUVE-MOI A_C ANNA TEKO.mp3">
+      <img src="images/music.jpg" alt="Cover 1">
+      <span>SAUVE-MOI A_C ANNA TEKO</span>
+   </li>
+   <li class="song" data-src="music/Schadrac Loman - La croix bénie.mp3">
+      <img src="images/music.jpg" alt="Cover 1">
+      <span>Schadrac Loman - La croix bénie</span>
+   </li>
+   <li class="song" data-src="music/Rien n'est plus haut (session acoustique)-la Chapelle Musique ft. Étienne Charles, Lauréanne Gohier.mp3">
+      <img src="images/music.jpg" alt="Cover 1">
+      <span>Rien n'est plus haut (session acoustique)-la Chapelle Musique</span>
+   </li>
+   <li class="song" data-src="music/Ton amour - Mirella (Lyrics video).mp3">
+      <img src="images/music.jpg" alt="Cover 1">
+      <span>Ton amour - Mirella</span>
+   </li>
+   <li class="song" data-src="music/Tout est possible en toi (Lyrics vidéo) - la Chapelle Musique ft. Philippe Joseph Bedard.mp3">
+      <img src="images/music.jpg" alt="Cover 1">
+      <span>Tout est possible en toi - la Chapelle Musique ft. Philippe Joseph Bedard</span>
+   </li>
+   <li class="song" data-src="music/Tout près (Lyrics vidéo) - la Chapelle Musique ft. Philippe Joseph Bedard.mp3">
+      <img src="images/music.jpg" alt="Cover 1">
+      <span>Tout près - la Chapelle Musique ft. Philippe Joseph Bedard</span>
+   </li>
+   <li class="song" data-src="music/Tu m'aimes (Youth FR) - Jade & Joseph.mp3">
+      <img src="images/music.jpg" alt="Cover 1">
+      <span>Tu m'aimes - Jade & Joseph</span>
+   </li>
+   <li class="song" data-src="music/Tu parles - Mirella (Clip Officiel).mp3">
+      <img src="images/music.jpg" alt="Cover 1">
+      <span>Tu parles - Mirella</span>
+   </li>
+   <li class="song" data-src="music/Ada Ehi - Another Miracle.mp3">
+      <img src="images/music.jpg" alt="Cover 1">
+      <span>Ada Ehi - Another Miracle</span>
+   </li>
+   <li class="song" data-src="music/Ada Ehi - Cheta.mp3">
+      <img src="images/music.jpg" alt="Cover 1">
+      <span>Ada Ehi - Cheta</span>
+   </li>
+   <li class="song" data-src="music/Ada Ehi - Congratulations.mp3">
+      <img src="images/music.jpg" alt="Cover 1">
+      <span>Ada Ehi - Congratulations</span>
+   </li>
+   <li class="song" data-src="music/Ada Ehi - I Overcame.mp3">
+      <img src="images/music.jpg" alt="Cover 1">
+      <span>Ada Ehi - I Overcame</span>
+   </li>
+   <li class="song" data-src="music/Ada Ehi - I Testify.mp3">
+      <img src="images/music.jpg" alt="Cover 1">
+      <span>Ada Ehi - I Testify</span>
+   </li>
+   <li class="song" data-src="music/Ada Ehi - In Your Name.mp3">
+      <img src="images/music.jpg" alt="Cover 1">
+      <span>Ada Ehi - In Your Name</span>
+   </li>
+   <li class="song" data-src="music/Ada Ehi - Jesus (You Are Able).mp3">
+      <img src="images/music.jpg" alt="Cover 1">
+      <span>Ada Ehi - Jesus (You Are Able)</span>
+   </li>
+   <li class="song" data-src="music/Ada Ehi - Never Go Down.mp3">
+      <img src="images/music.jpg" alt="Cover 1">
+      <span>Ada Ehi - Never Go Down</span>
+   </li>
+   <li class="song" data-src="music/Ada Ehi - Notice.mp3">
+      <img src="images/music.jpg" alt="Cover 1">
+      <span>Ada Ehi - Notice</span>
+   </li>
+   <li class="song" data-src="music/Ada Ehi - Only You Jesus.mp3">
+      <img src="images/music.jpg" alt="Cover 1">
+      <span>Ada Ehi - Only You Jesus</span>
+   </li>
+   <li class="song" data-src="music/Ada Ehi - See What the Lord Has Done.mp3">
+      <img src="images/music.jpg" alt="Cover 1">
+      <span>Ada Ehi - See What the Lord Has Done</span>
+   </li>
+   <li class="song" data-src="music/Ada Ehi - Settled.mp3">
+      <img src="images/music.jpg" alt="Cover 1">
+      <span>Ada Ehi - Settled</span>
+   </li>
+   <li class="song" data-src="music/Ada Ehi - The Faithful God.mp3">
+      <img src="images/music.jpg" alt="Cover 1">
+      <span>Ada Ehi - The Faithful God</span>
+   </li>
+   <li class="song" data-src="music/Ada Ehi - The Final Say.mp3">
+      <img src="images/music.jpg" alt="Cover 1">
+      <span>Ada Ehi - The Final Say</span>
+   </li>
+   <li class="song" data-src="music/Afrobeats Rap and Jesus CD 1 TRACK 4 (320).mp3">
+      <img src="images/music.jpg" alt="Cover 1">
+      <span>Afrobeats Rap and Jesus CD 1 TRACK 4 (320)</span>
+   </li>
+   <li class="song" data-src="music/Daniel Lubams - C'est Papa qui m'a donné.mp3">
+      <img src="images/music.jpg" alt="Cover 1">
+      <span>Daniel Lubams - C'est Papa qui m'a donné</span>
+   </li>
+   <li class="song" data-src="music/Daniel Lubams - Elevation.mp3">
+      <img src="images/music.jpg" alt="Cover 1">
+      <span>Daniel Lubams - Elevation</span>
+   </li>
+   <li class="song" data-src="music/Daniel Lubams - Jesus Quelqu'un de bien.mp3">
+      <img src="images/music.jpg" alt="Cover 1">
+      <span>Daniel Lubams - Jesus Quelqu'un de bien</span>
+   </li>
+   <li class="song" data-src="music/Daniel Lubams - Nzela.mp3">
+      <img src="images/music.jpg" alt="Cover 1">
+      <span>Daniel Lubams - Nzela</span>
+   </li>
+   <li class="song" data-src="music/Daniel Lubams - Yesu.mp3">
+      <img src="images/music.jpg" alt="Cover 1">
+      <span>Daniel Lubams - Yesu</span>
+   </li>
+   <li class="song" data-src="music/Limoblaze - Desire.mp3">
+      <img src="images/music.jpg" alt="Cover 1">
+      <span>Limoblaze - Desire</span>
+   </li>
+   <li class="song" data-src="music/Limoblaze - Gold.mp3">
+      <img src="images/music.jpg" alt="Cover 1">
+      <span>Limoblaze - Gold</span>
+   </li>
+   <li class="song" data-src="music/Limoblaze - Hallelujah.mp3">
+      <img src="images/music.jpg" alt="Cover 1">
+      <span>Limoblaze - Hallelujah</span>
+   </li>
+   <li class="song" data-src="music/Limoblaze - I Believe.mp3">
+      <img src="images/music.jpg" alt="Cover 1">
+      <span>Limoblaze - I Believe</span>
+   </li>
+   <li class="song" data-src="music/Limoblaze - Jireh (My Provider).mp3">
+      <img src="images/music.jpg" alt="Cover 1">
+      <span>Limoblaze - Jireh (My Provider)</span>
+   </li>
+   <li class="song" data-src="music/Manuel The Creator - All That I Need.mp3">
+      <img src="images/music.jpg" alt="Cover 1">
+      <span>Manuel The Creator - All That I Need</span>
+   </li>
+   <li class="song" data-src="music/Marizu - Believe.mp3">
+      <img src="images/music.jpg" alt="Cover 1">
+      <span>Marizu - Believe</span>
+   </li>
+   <li class="song" data-src="music/Marizu - I Know.mp3">
+      <img src="images/music.jpg" alt="Cover 1">
+      <span>Marizu - I Know</span>
+   </li>
+   <li class="song" data-src="music/Marizu - Looku Looku.mp3">
+      <img src="images/music.jpg" alt="Cover 1">
+      <span>Marizu - Looku Looku</span>
+   </li>
+   <li class="song" data-src="music/Marizu - Morning Sun.mp3">
+      <img src="images/music.jpg" alt="Cover 1">
+      <span>Marizu - Morning Sun</span>
+   </li>
+   <li class="song" data-src="music/Marizu - Victory song.mp3">
+      <img src="images/music.jpg" alt="Cover 1">
+      <span>Marizu - Victory song</span>
+   </li>
+   <li class="song" data-src="music/Marizu - Wonder (Acoustic).mp3">
+      <img src="images/music.jpg" alt="Cover 1">
+      <span>Marizu - Wonder (Acoustic)</span>
+   </li>
+   <li class="song" data-src="music/TB1 - Shine.mp3">
+      <img src="images/music.jpg" alt="Cover 1">
+      <span>TB1 - Shine</span>
+   </li>
+   <li class="song" data-src="music/Marizu - Wonder.mp3">
+      <img src="images/music.jpg" alt="Cover 1">
+      <span>Marizu - Wonder</span>
+   </li>
+   <li class="song" data-src="music/Victor Thompson - Amazing God.mp3">
+      <img src="images/music.jpg" alt="Cover 1">
+      <span>Victor Thompson - Amazing God</span>
+   </li>
+   <li class="song" data-src="music/Envahis_ce_lieu_-_Guerdie_Charles(128k).mp3">
+      <img src="images/music.jpg" alt="Cover 1">
+      <span>Envahis_ce_lieu_-_Guerdie_Charles</span>
+   </li>
+   <li class="song" data-src="music/EXO_ÉCLATS_5_-_À_l'Agneau_(Avec_Les_Paroles)(128k).mp3">
+      <img src="images/music.jpg" alt="Cover 1">
+      <span>EXO_ÉCLATS_5_-_À_l'Agneau_</span>
+   </li>
+   <li class="song" data-src="music/SEIGNEUR_FAIS-MOI_VOIR_TA_GLOIRE_-_Ô_Vives_-_voir_version_révisée(128k).mp3">
+      <img src="images/music.jpg" alt="Cover 1">
+      <span>SEIGNEUR_FAIS-MOI_VOIR_TA_GLOIRE</span>
+   </li>
+   <li class="song" data-src="music/shilo_par_le_groupe_Gael(128k).mp3">
+      <img src="images/music.jpg" alt="Cover 1">
+      <span>shilo_par_le_groupe_Gael</span>
+   </li>
+   <li class="song" data-src="music/STEVE_CROWN_-__YOU_ARE_GREAT__(The_Official_Video)(128k).mp3">
+      <img src="images/music.jpg" alt="Cover 1">
+      <span>STEVE_CROWN_-__YOU_ARE_GREAT</span>
+   </li>
+   <li class="song" data-src="music/Tu_frayes_un_chemin_-_Louange_MCI__Way_Maker(128k).mp3">
+      <img src="images/music.jpg" alt="Cover 1">
+      <span>Tu_frayes_un_chemin_-_Louange_MCI__Way_Maker</span>
+   </li>
+      <!-- Ajoutez d'autres chansons ici -->
+    </ul>
+    <!-- <div class="controls">
+       
+        <i id="playPauseBtn" class="fas fa-play"></i>
+        <i id="nextBtn" class="fas fa-forward"></i>
+        <button id="shuffleBtn" class="btn">Aléatoire</button>
+        <button id="loopBtn" class="btn">Continu</button>
+    </div>           -->
+  </div>
+  <footer class="footer">
+   <div>
+     <audio id="audio-player" controls>
+       <source id="audio-source" src="" type="audio/mpeg">
+       Your browser does not support the audio element.
+     </audio>
+     <div>
+       <i id="previousBtn" class="fas fa-backward"></i>
+       <i id="nextBtn" class="fas fa-forward"></i>
+     </div>
+     <div class="current-song">
+      <span id="currentSongTitle"></span>
+    </div>
+   </div>
+ </footer>
+ 
+  <script src="script.js"></script>
+</body>
+</html>
